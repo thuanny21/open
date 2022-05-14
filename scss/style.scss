@@ -1,0 +1,109 @@
+//Cores
+$cor-verde: #006B3F;
+$cor-verde-claro: #079D56;
+$cor-preto: #242625;
+$cor-laranja: #F18815;
+$cor-branco: #FFFFFF;
+
+//fontes
+  @font-face {
+  font-family: Averta;
+  src: url('../font/AvertaStd-Bold.ttf') format('truetype')
+}
+
+$font-1: Averta;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  max-width: 1248px;
+  margin-left: auto;
+  margin-right: auto;  
+  img {
+    max-width: 100%;
+    height: 30px;
+    margin-top: 15px;
+    margin-right: 20px;
+  }
+}
+
+.introducao-bg {
+  max-width: 1248px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto; 
+}
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  background-image: url("../img/Foto.png");
+  background-position: right;
+  border-radius: 32px;
+  .card {
+    background: linear-gradient(225deg, $cor-verde-claro 0%, $cor-verde 100%);
+    width: 612px;
+    height: 304px;
+    border-radius: 32px;
+    position: relative;
+    display: flex;
+    justify-content: center;    
+    align-items: center; 
+    
+  }  
+  .card h1 {
+    color: $cor-branco;
+    font-family: $font-1;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;      
+    position: absolute;
+    margin-left: 106px;
+    margin-right: 106px;
+  }
+  .img-bg img{   
+    max-width: 100%;
+    display: block;
+    height: 304px;
+    margin-right: 50px;
+    position: absolute;
+    right: 0;
+    border-radius: 0 32px 32px 0;
+  }
+}
+
+.navegacao-bg {
+  max-width: 1248px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto; 
+  ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;    
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 16px;
+    font-family: $font-1;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: $cor-preto;
+    content: ">";
+  }
+  ul.breadcrumb li a {
+    color: $cor-verde;
+    text-decoration: none;
+  }
+  ul.breadcrumb li a:hover {
+    color: $cor-laranja;
+    text-decoration: none;
+  }
+}
+
+
+
+
+
