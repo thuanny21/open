@@ -1,6 +1,6 @@
 @font-face {
   font-family: Averta;
-  src: url("../font/AvertaStd-Bold.ttf") format("truetype"); }
+  src: url("../font/FontsFree-Net-AvertaStandard-Regular.ttf") format("truetype"); }
 
 .header {
   display: flex;
@@ -78,3 +78,50 @@
   .navegacao-bg ul.breadcrumb li a:hover {
     color: #F18815;
     text-decoration: none; }
+
+.explore-bg {
+  max-width: 1248px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto; }
+  .explore-bg h1 {
+    font-family: Averta;
+    color: #242625;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px; }
+  .explore-bg p {
+    font-family: Averta;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700; }
+  .explore-bg .btn-principal {
+    background-color: #006B3F;
+    width: 142px;
+    height: 48px;
+    color: #FFFFFF;
+    font-family: Averta;
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 8px;
+    border: none; }
+  .explore-bg .explore-mrv {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15%; }
+    .explore-bg .explore-mrv .mrv-co img {
+      width: 152px;
+      height: 26.72px;
+      margin-bottom: 24px; }
+    .explore-bg .explore-mrv .btn-mrv {
+      background-color: #FFFFFF;
+      width: 152px;
+      height: 47.51px;
+      border-radius: 8px;
+      border: 2px solid #006B3F; }
+      .explore-bg .explore-mrv .btn-mrv img {
+        justify-content: center;
+        align-items: center; }

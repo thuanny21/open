@@ -8,7 +8,7 @@ $cor-branco: #FFFFFF;
 //fontes
   @font-face {
   font-family: Averta;
-  src: url('../font/AvertaStd-Bold.ttf') format('truetype')
+  src: url('../font/FontsFree-Net-AvertaStandard-Regular.ttf') format('truetype')
 }
 
 $font-1: Averta;
@@ -103,6 +103,61 @@ $font-1: Averta;
   }
 }
 
+.explore-bg {
+  max-width: 1248px;
+  display: grid;  
+  grid-template-columns: 1fr 1fr; 
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;   
+  h1 {
+    font-family: $font-1;
+    color: $cor-preto;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+  }
+  p {
+    font-family: $font-1;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  .btn-principal {
+    background-color: $cor-verde;
+    width: 142px;
+    height: 48px;
+    color: $cor-branco;
+    font-family: $font-1;
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 8px;
+    border: none;
+  }
+  .explore-mrv {
+    align-items: center;
+    justify-content: center;
+    text-align: center;    
+    margin-top: 15%;
+    .mrv-co img{
+      width: 152px;
+      height: 26.72px;
+      margin-bottom: 24px;
+    }  
+    .btn-mrv {
+      background-color: $cor-branco;
+      width: 152px;
+      height: 47.51px;
+      border-radius: 8px;
+      border: 2px solid $cor-verde;       
+
+      img {
+        justify-content: center;
+        align-items: center;      
+      }
+    }
+  }
+}
 
 
 
