@@ -1,6 +1,21 @@
+@charset "UTF-8";
 @font-face {
   font-family: Averta;
   src: url("../font/FontsFree-Net-AvertaStandard-Regular.ttf") format("truetype"); }
+
+body h1 {
+  font-family: Averta;
+  color: #242625;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px; }
+
+body p {
+  font-family: Averta;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #242625; }
 
 .header {
   display: flex;
@@ -86,17 +101,6 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto; }
-  .explore-bg h1 {
-    font-family: Averta;
-    color: #242625;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 60px; }
-  .explore-bg p {
-    font-family: Averta;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 700; }
   .explore-bg .btn-principal {
     background-color: #006B3F;
     width: 142px;
@@ -125,3 +129,45 @@
       .explore-bg .explore-mrv .btn-mrv img {
         justify-content: center;
         align-items: center; }
+
+.valores-bg {
+  max-width: 1248px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto; }
+  .valores-bg .valores-det {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    font-family: Averta; }
+    .valores-bg .valores-det details summary {
+      font-size: 16px;
+      color: #006B3F;
+      font-weight: 700;
+      position: relative; }
+    .valores-bg .valores-det details summary::marker {
+      color: transparent; }
+    .valores-bg .valores-det details summary::after {
+      content: "∨";
+      position: absolute;
+      color: green;
+      font-size: 1em;
+      font-weight: bold;
+      right: 1em;
+      top: .2em;
+      transition: all 0.5s; }
+    .valores-bg .valores-det details details[open] summary::after {
+      content: "-";
+      color: red;
+      transform: translate(5px, 0) rotate(45deg); }
+    .valores-bg .valores-det details p {
+      font-family: Averta;
+      font-size: 16px; }
+    .valores-bg .valores-det hr {
+      width: 400px;
+      height: 2px;
+      border-radius: 4px;
+      background-color: #006B3F;
+      color: #000000;
+      border: none; }

@@ -13,6 +13,23 @@ $cor-branco: #FFFFFF;
 
 $font-1: Averta;
 
+body {
+  h1 {
+    font-family: $font-1;
+    color: $cor-preto;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+  }
+  p {
+    font-family: $font-1;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $cor-preto;
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -109,20 +126,8 @@ $font-1: Averta;
   grid-template-columns: 1fr 1fr; 
   align-items: center;
   margin-left: auto;
-  margin-right: auto;   
-  h1 {
-    font-family: $font-1;
-    color: $cor-preto;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 60px;
-  }
-  p {
-    font-family: $font-1;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 700;
-  }
+  margin-right: auto;     
+  
   .btn-principal {
     background-color: $cor-verde;
     width: 142px;
@@ -156,6 +161,66 @@ $font-1: Averta;
         align-items: center;      
       }
     }
+  }
+}
+
+.valores-bg {
+  max-width: 1248px;  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto; 
+  .valores-det {
+    display: grid;
+    grid-template-columns: 300px 300px; 
+    font-family: $font-1;
+    details {
+      summary {
+        font-size: 16px;
+        color: $cor-verde;
+        font-weight: 700;
+        position: relative;
+       
+      }      
+      summary::marker {
+        color: transparent;
+      }
+      summary::after {
+        content:  "∨"; 
+        position: absolute;
+        color: green;
+        font-size: 1em;
+        font-weight: bold; 
+        right: 1em;
+        top: .2em;
+        transition: all 0.5s;
+      } 
+      details[open] summary::after {
+        content:  "-";
+        color: red;
+        transform: translate(5px,0) rotate(45deg);
+       }
+   
+   
+      
+      p {
+        font-family: $font-1;
+        font-size: 16px;
+      }
+    }
+    hr {
+      width: 400px;
+      height: 2px;
+      border-radius: 4px;     
+      background-color: $cor-verde;
+      color: #000000;
+      border: none;
+
+    }
+  }
+  .grafismo {
+    
   }
 }
 
